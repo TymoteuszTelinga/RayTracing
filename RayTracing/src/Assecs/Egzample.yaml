@@ -1,0 +1,26 @@
+Scene: Untilted
+Duration: 40
+Objects:
+  - UUID: 815308332698209015
+    Name: Light
+    Position: [0, 3.61874294, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 7251273925740326791
+  - UUID: 18364726408900699974
+    Name: Cube
+    Position: [2.79777145, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 6241355431893526231
+Animations:
+  - Object UUID: 18364726408900699974
+    KeyFrames:
+      - Frame: 0
+        Value: [4.21837902, 0, 0]
+      - Frame: 30
+        Value: [-1.10889935, 0, 0]
+
+

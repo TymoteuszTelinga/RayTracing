@@ -1,0 +1,33 @@
+Scene: Untilted
+Duration: 40
+Objects:
+  - UUID: 773348907769518356
+    Name: Object
+    Position: [3, 1.84100008, 1.45084238]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 4397781559881503138
+    Material: 7251273925740326791
+  - UUID: 3382303990190042581
+    Name: flor
+    Position: [4.79934978, -2.47759199, 0]
+    Rotation: [0, 0, 0]
+    Scale: [6.90874243, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 6241355431893526231
+  - UUID: 11289671152373162447
+    Name: Wall
+    Position: [-2.97535849, 0.536214173, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 4.68260574, 1]
+    Mesh: 5224691090326346996
+    Material: 6241355431893526231
+Animations:
+  - Object UUID: 773348907769518356
+    KeyFrames:
+      - Frame: 5
+        Value: [3, 1.84099996, 3.18351698]
+      - Frame: 25
+        Value: [3, 1.84099996, -2.59206438]
+      - Frame: 37
+        Value: [3, -0.264700532, -2.59206438]

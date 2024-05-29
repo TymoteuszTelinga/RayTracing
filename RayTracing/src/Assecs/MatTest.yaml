@@ -1,0 +1,33 @@
+Scene: Untilted
+Duration: 70
+Objects:
+  - UUID: 1394688238580375102
+    Name: Blue cube
+    Position: [3.34579325, 2.08309984, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 0.584248662, 0.816636205]
+    Mesh: 5224691090326346996
+    Material: 1449324815857976254
+  - UUID: 2644810074818602835
+    Name: Light
+    Position: [0, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 7251273925740326791
+  - UUID: 17297975609549379144
+    Name: Pink cube
+    Position: [2.54874134, 1.90715873, 3.03799558]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 9285964873906333549
+  - UUID: 18013432239035537287
+    Name: Brown cube
+    Position: [0, 1.51162398, 4.34227514]
+    Rotation: [0.540467978, 0, 0]
+    Scale: [1, 0.999999702, 0.999999702]
+    Mesh: 5224691090326346996
+    Material: 6241355431893526231
+Animations:
+  []

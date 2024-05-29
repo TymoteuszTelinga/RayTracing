@@ -1,0 +1,75 @@
+Scene: Untilted
+Duration: 36
+Objects:
+  - UUID: 2844650565888830188
+    Name: Light
+    Position: [-3.43598914, 2.90112638, -0.0364814252]
+    Rotation: [0, 0, 0]
+    Scale: [0.252532423, 0.208111197, 1.97603416]
+    Mesh: 5224691090326346996
+    Material: 7251273925740326791
+  - UUID: 3473996518189270863
+    Name: Object
+    Position: [-5, 0, 2]
+    Rotation: [0, 0, 0]
+    Scale: [0.5, 0.5, 0.5]
+    Mesh: 5224691090326346996
+    Material: 6241355431893526231
+  - UUID: 3735421523489284007
+    Name: Wall
+    Position: [1, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 3, 3]
+    Mesh: 5224691090326346996
+    Material: 1714435999470273442
+  - UUID: 4130914519018149123
+    Name: Flor
+    Position: [-3, -4, 0]
+    Rotation: [0, 0, 0]
+    Scale: [3, 1, 3]
+    Mesh: 5224691090326346996
+    Material: 1449324815857976254
+  - UUID: 7061380676468806482
+    Name: Object3
+    Position: [-5, 0, -2]
+    Rotation: [0, 0, 0]
+    Scale: [0.5, 0.5, 0.5]
+    Mesh: 5224691090326346996
+    Material: 17433155157240836123
+  - UUID: 8128438141844035522
+    Name: WallRight
+    Position: [-3, 0, -4]
+    Rotation: [0, 0, 0]
+    Scale: [3, 3, 1]
+    Mesh: 5224691090326346996
+    Material: 1449324815857976254
+  - UUID: 8438948364635338129
+    Name: Object2
+    Position: [-5, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [0.5, 0.5, 0.5]
+    Mesh: 5224691090326346996
+    Material: 6353751362091268645
+  - UUID: 9792563119953975066
+    Name: BackWall
+    Position: [-7, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 3, 3]
+    Mesh: 5224691090326346996
+    Material: 1449324815857976254
+  - UUID: 10820674082014193086
+    Name: Roff
+    Position: [-3, 4.00018835, 0]
+    Rotation: [0, 0, 0]
+    Scale: [3, 1, 3]
+    Mesh: 5224691090326346996
+    Material: 14112454324782672161
+  - UUID: 11492546994890790268
+    Name: WallLeft
+    Position: [-3, 0, 4]
+    Rotation: [0, 0, 0]
+    Scale: [3, 3, 1]
+    Mesh: 5224691090326346996
+    Material: 1449324815857976254
+Animations:
+  []

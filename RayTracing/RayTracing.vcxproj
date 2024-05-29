@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{58d75b6b-1264-4ce4-afc6-1259d3f75d9e}</ProjectGuid>
+    <RootNamespace>RayTracing</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;YAML_CPP_STATIC_DEFINE;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)RayTracing\vendor\GLFW\include;$(SolutionDir)RayTracing\vendor\GLEW\include;$(SolutionDir)RayTracing\src;$(SolutionDir)RayTracing\vendor;$(SolutionDir)RayTracing\vendor\yaml-cpp\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)RayTracing\vendor\GLEW\lib\Release\x64;$(SolutionDir)RayTracing\vendor\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glfw3.lib;opengl32.lib;glew32s.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;YAML_CPP_STATIC_DEFINE;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)RayTracing\vendor\GLFW\include;$(SolutionDir)RayTracing\vendor\GLEW\include;$(SolutionDir)RayTracing\src;$(SolutionDir)RayTracing\vendor;$(SolutionDir)RayTracing\vendor\yaml-cpp\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)RayTracing\vendor\GLEW\lib\Release\x64;$(SolutionDir)RayTracing\vendor\GLFW\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glfw3.lib;opengl32.lib;glew32s.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Asset\Asset.cpp" />
+    <ClCompile Include="src\Asset\AssetImporter.cpp" />
+    <ClCompile Include="src\Asset\AssetMenager.cpp" />
+    <ClCompile Include="src\Asset\MaterialSerializer.cpp" />
+    <ClCompile Include="src\Core\FileDialog.cpp" />
+    <ClCompile Include="src\Core\UUID.cpp" />
+    <ClCompile Include="src\Panels\MaterialPanel.cpp" />
+    <ClCompile Include="src\Panels\SceneHierarchyPanel.cpp" />
+    <ClCompile Include="src\Panels\TimeLinePanel.cpp" />
+    <ClCompile Include="src\Render\Animations\Track.cpp" />
+    <ClCompile Include="src\Render\Mesh.cpp" />
+    <ClCompile Include="src\Render\BufferBase.cpp" />
+    <ClCompile Include="src\Render\Camera.cpp" />
+    <ClCompile Include="src\Editor.cpp" />
+    <ClCompile Include="src\Core\Application.cpp" />
+    <ClCompile Include="src\Core\Input.cpp" />
+    <ClCompile Include="src\Core\Timer.cpp" />
+    <ClCompile Include="src\Render\Object.cpp" />
+    <ClCompile Include="src\Render\Program.cpp" />
+    <ClCompile Include="src\Render\Image.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Render\Renderer.cpp" />
+    <ClCompile Include="src\Render\Scene.cpp" />
+    <ClCompile Include="src\Render\SceneSerializer.cpp" />
+    <ClCompile Include="vendor\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="vendor\JoMPEG\jo_mpeg.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\binary.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\contrib\graphbuilder.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\contrib\graphbuilderadapter.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\convert.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\depthguard.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\directives.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\emit.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\emitfromevents.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\emitter.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\emitterstate.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\emitterutils.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\exceptions.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\exp.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\memory.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\node.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\nodebuilder.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\nodeevents.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\node_data.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\null.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\ostream_wrapper.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\parse.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\parser.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\regex_yaml.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\scanner.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\scanscalar.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\scantag.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\scantoken.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\simplekey.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\singledocparser.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\stream.cpp" />
+    <ClCompile Include="vendor\yaml-cpp\src\tag.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Asset\Asset.h" />
+    <ClInclude Include="src\Asset\AssetImporter.h" />
+    <ClInclude Include="src\Asset\AssetMenager.h" />
+    <ClInclude Include="src\Asset\MaterialSerializer.h" />
+    <ClInclude Include="src\Core\Base.h" />
+    <ClInclude Include="src\Core\FileDialog.h" />
+    <ClInclude Include="src\Core\UUID.h" />
+    <ClInclude Include="src\Panels\MaterialPanel.h" />
+    <ClInclude Include="src\Panels\SceneHierarchyPanel.h" />
+    <ClInclude Include="src\Panels\TimeLinePanel.h" />
+    <ClInclude Include="src\Render\Animations\Animation.h" />
+    <ClInclude Include="src\Render\Animations\Track.h" />
+    <ClInclude Include="src\Render\Material.h" />
+    <ClInclude Include="src\Render\Mesh.h" />
+    <ClInclude Include="src\Render\BufferBase.h" />
+    <ClInclude Include="src\Render\Camera.h" />
+    <ClInclude Include="src\Editor.h" />
+    <ClInclude Include="src\Core\Application.h" />
+    <ClInclude Include="src\Core\Input.h" />
+    <ClInclude Include="src\Core\Layer.h" />
+    <ClInclude Include="src\Core\Timer.h" />
+    <ClInclude Include="src\Render\Buffer.h" />
+    <ClInclude Include="src\Render\Object.h" />
+    <ClInclude Include="src\Render\Program.h" />
+    <ClInclude Include="src\Render\Image.h" />
+    <ClInclude Include="src\Render\Renderer.h" />
+    <ClInclude Include="src\Render\Scene.h" />
+    <ClInclude Include="src\Render\SceneSerializer.h" />
+    <ClInclude Include="src\Render\ShaderTypes.h" />
+    <ClInclude Include="vendor\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="vendor\imgui\imconfig.h" />
+    <ClInclude Include="vendor\imgui\imgui.h" />
+    <ClInclude Include="vendor\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="vendor\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="vendor\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="vendor\JoMPEG\jo_mpeg.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\anchor.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\binary.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\contrib\anchordict.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\contrib\graphbuilder.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\depthguard.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\dll.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\emitfromevents.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\emitter.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\emitterdef.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\emittermanip.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\emitterstyle.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\eventhandler.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\exceptions.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\mark.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\convert.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\impl.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\iterator.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\iterator_fwd.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\memory.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\node.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\node_data.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\node_iterator.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\detail\node_ref.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\emit.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\impl.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\iterator.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\node.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\parse.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\ptr.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\node\type.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\noexcept.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\null.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\ostream_wrapper.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\parser.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\stlemitter.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\traits.h" />
+    <ClInclude Include="vendor\yaml-cpp\include\yaml-cpp\yaml.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\collectionstack.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\contrib\graphbuilderadapter.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\directives.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\emitterstate.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\emitterutils.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\exp.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\indentation.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\nodebuilder.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\nodeevents.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\ptr_vector.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\regeximpl.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\regex_yaml.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\scanner.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\scanscalar.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\scantag.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\setting.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\singledocparser.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\stream.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\streamcharsource.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\stringsource.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\tag.h" />
+    <ClInclude Include="vendor\yaml-cpp\src\token.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

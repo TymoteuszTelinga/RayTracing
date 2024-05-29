@@ -1,0 +1,23 @@
+Scene: Untilted
+Objects:
+  - UUID: 13137956050170564698
+    Name: Cube
+    Position: [0, 3, -4]
+    Rotation: [0, 0, 0]
+    Scale: [9, 7, 1]
+    Mesh: 0
+    Material: 3
+  - UUID: 1680413320627047248
+    Name: Pick
+    Position: [-5, 0, 0]
+    Rotation: [0, 0, 1.57000005]
+    Scale: [0.999998689, 0.999998689, 1]
+    Mesh: 1
+    Material: 0
+  - UUID: 108485186500919435
+    Name: Light
+    Position: [0, 5, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 0
+    Material: 4
