@@ -1,0 +1,7 @@
+Material:
+  Albedo: [1, 0.647058845, 0]
+  Roughness: 0
+  Emission Color: [1, 1, 1]
+  Emission Power: 0
+  Specular Color: [0.90196079, 0.925490201, 0.0588235296]
+  Specular Chance: 0.5

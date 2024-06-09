@@ -1,0 +1,33 @@
+Scene: Untilted
+Duration: 60
+Objects:
+  - UUID: 1398391385425718631
+    Name: Object
+    Position: [3.23313522, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 5224691090326346996
+    Material: 7251273925740326791
+  - UUID: 11770335537770925550
+    Name: S1
+    Position: [0, -3, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 4397781559881503138
+    Material: 1449324815857976254
+  - UUID: 12799878997925798059
+    Name: S2
+    Position: [-2.55238485, 0, 0]
+    Rotation: [0, 0, 0]
+    Scale: [1, 1, 1]
+    Mesh: 4397781559881503138
+    Material: 1714435999470273442
+Animations:
+  - Object UUID: 11770335537770925550
+    KeyFrames:
+      - Frame: 0
+        Value: [0, -3, 0]
+      - Frame: 30
+        Value: [0, 3, 0]
+      - Frame: 60
+        Value: [0, -3, 0]

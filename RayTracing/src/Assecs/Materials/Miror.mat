@@ -1,0 +1,5 @@
+Material:
+  Albedo: [0, 1, 0]
+  Emission Color: [1, 1, 1]
+  Emission Power: 0
+  Roughness: 0.75

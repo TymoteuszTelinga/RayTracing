@@ -1,0 +1,43 @@
+AssetRegistry:
+  - UUID: 507834686172781834
+    FilePath: src/Assecs/Materials/Material.mat
+    Type: AssetType::Material
+  - UUID: 1449324815857976254
+    FilePath: src/Assecs/Materials/Blue.mat
+    Type: AssetType::Material
+  - UUID: 1714435999470273442
+    FilePath: src/Assecs/Materials/Red.mat
+    Type: AssetType::Material
+  - UUID: 4397781559881503138
+    FilePath: C:/Users/tymte/source/repos/RayTracing/RayTracing/src/Assecs/sphere.obj
+    Type: AssetType::Mesh
+  - UUID: 5224691090326346996
+    FilePath: src/Assecs/Cube.obj
+    Type: AssetType::Mesh
+  - UUID: 5443682923917190425
+    FilePath: C:/Users/tymte/source/repos/RayTracing/RayTracing/src/Assecs/Plane.obj
+    Type: AssetType::Mesh
+  - UUID: 6241355431893526231
+    FilePath: src/Assecs/Materials/Brown.mat
+    Type: AssetType::Material
+  - UUID: 6353751362091268645
+    FilePath: src/Assecs/Brown1.mat
+    Type: AssetType::Material
+  - UUID: 7251273925740326791
+    FilePath: src/Assecs/Materials/White.mat
+    Type: AssetType::Material
+  - UUID: 9285964873906333549
+    FilePath: src/Assecs/Test.mat
+    Type: AssetType::Material
+  - UUID: 11569773964773000476
+    FilePath: src/Assecs/Material8.mat
+    Type: AssetType::Material
+  - UUID: 13960081356378625165
+    FilePath: src/Assecs/Pick.obj
+    Type: AssetType::Mesh
+  - UUID: 14112454324782672161
+    FilePath: src/Assecs/Materials/Pink.mat
+    Type: AssetType::Material
+  - UUID: 17433155157240836123
+    FilePath: src/Assecs/Brown2.mat
+    Type: AssetType::Material
